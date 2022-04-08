@@ -1,0 +1,10 @@
+<h1><%= @state %>'s National Parks</h1>
+Total number of parks:<%= @state_parks.count%>
+<div class="park_details">
+  <br><% @state_parks.each do |park| %>
+  <br>Name:<%= park.name %>
+  <br>Description<%= park.description %>
+  <br>Directions<%= park.direction_info %>
+  <br>Standard Operating Hours<%= park.hours %><br><br>
+<% end  %>
+</div>
